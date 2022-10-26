@@ -4,11 +4,10 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as Persuade } from "./Persuade";
-export { default as Logo } from "./Logo";
-export { default as Testimony } from "./Testimony";
-export { default as Hero } from "./Hero";
-export { default as Story } from "./Story";
-export { default as Footer } from "./Footer";
-export { default as Nav } from "./Nav";
-export { default as studioTheme } from "./studioTheme";
+import * as React from "react";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { FlexProps } from "@aws-amplify/ui-react";
+export declare type HeroProps = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: EscapeHatchProps | undefined | null;
+}>;
+export default function Hero(props: HeroProps): React.ReactElement;
