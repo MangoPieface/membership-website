@@ -47,7 +47,6 @@ export default function Footer(props) {
         right="-0.17%"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="© Copyright , Algomentor 2022"
         {...getOverrideProps(overrides, "\u00A9 Copyright , Algomentor 2022")}
       ></Text>
       <Logo

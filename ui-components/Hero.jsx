@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function Hero(props) {
-  const { overrides, ...rest } = props;
+  const { handleClick, overrides, ...rest } = props;
   return (
     <Flex
       gap="72px"
@@ -74,6 +74,7 @@ export default function Hero(props) {
           isDisabled={false}
           variation="primary"
           children="Become a Member"
+          onClick={handleClick}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

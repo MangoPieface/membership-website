@@ -5,9 +5,12 @@
  **************************************************************************/
 
 import * as React from "react";
+import { Post } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type StoryProps = React.PropsWithChildren<Partial<FlexProps> & {
+    postModel?: Post;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function Story(props: StoryProps): React.ReactElement;
