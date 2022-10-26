@@ -1,0 +1,15 @@
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  description: String
+  readTime: Int
+  body: String
+}
+
+type Testimonal @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  avatar: String
+  testimony: String
+}
+ 
