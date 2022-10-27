@@ -11,10 +11,13 @@
   "dependencies": {
     "@aws-amplify/ui-react": "^3.5.9",
     "@fontsource/inter": "^4.5.14",
+    "@stripe/stripe-js": "^1.42.0",
     "aws-amplify": "^4.3.41",
+    "aws-sdk": "^2.1241.0",
     "next": "13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "stripe": "^10.15.0"
   },
   "devDependencies": {
     "eslint": "8.26.0",

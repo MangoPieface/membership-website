@@ -14,6 +14,17 @@
     "categories": {
       "auth": {
         "MembershipDemo": {}
+      },
+      "function": {
+        "membershipwebsite980da972": {
+          "secretsPathAmplifyAppId": "d3rtirx7nbrk6h",
+          "deploymentBucketName": "amplify-membershipdemo-staging-93612-deployment",
+          "s3Key": "amplify-builds/membershipwebsite980da972-5a7761646d45305a4e39-build.zip"
+        }
+      },
+      "api": {
+        "MembershipDemo": {},
+        "membershipwebsite321231": {}
       }
     }
   }
