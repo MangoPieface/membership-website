@@ -3,7 +3,7 @@ import React from "react";
 import { Heading, Text, View, Authenticator, useTheme, Flex } from "@aws-amplify/ui-react";
 import Layout from "../components/Layout";
 import { Footer, Logo, StoryCollection } from "../ui-components";
-import { userAgentFromString } from "next/server";
+//import { userAgentFromString } from "next/server";
 function Post() {
 
   const authComponents = {
