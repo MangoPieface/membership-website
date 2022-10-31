@@ -2,15 +2,13 @@
 import React from "react";
 import { Flex, View } from "@aws-amplify/ui-react";
 import { Footer, Hero, Persuade, TestimonyCollection } from "../ui-components";
-import { useRouter } from 'next/router';
+import Router from 'next/router';
 
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 
 
 function index() {
-  const router = useRouter();
-
 
   async function handleClick() {
     const stripe = await loadStripe(
@@ -24,7 +22,9 @@ function index() {
     });
   }
   return (
-    <Layout handleClick={() => {router.push('/post')}} authText="Sign Up" username="none">
+    <Layout handleClick={() => {
+      Router.push('/post')
+      }} authText="Sign Up" username="none">
       <View marginBottom="135px">
         <Hero handleClick={handleClick} />
 
